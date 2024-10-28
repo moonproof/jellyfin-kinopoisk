@@ -8,7 +8,7 @@
     "description": "Загружает рейтинг, описания, актёров, трейлеры и т.д. с сайта КиноПоиск. Может потребоваться зарегистрировать свой ApiToken, см. информацию в параметрах плагина. Для точного распознавания рекомендуется указывать id фильма с сайта КиноПоиск в имени файла в формате kp-12345 или kp12345. Подробнее см. https://github.com/LinFor/jellyfin-plugin-kinopoisk/blob/master/README.md\n",
     "imageUrl": "https://kinopoisk.userecho.com/s/attachments/28876/0/1/25f8c0315e6ccb2aa6c2642e48f2c9e9.png",
     "versions": [
-      {
+       {
         "version": "10.9.0.0",
         "checksum": "46f29865d6ddb8e66f577ffd93cb8a55",
         "changelog": "new release",
@@ -16,137 +16,6 @@
         "targetAbi": "10.9.0",
         "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.9.0.0.zip",
         "timestamp": "2024-05-15T15:11:12Z"
-      },
-      {
-        "version": "10.8.9.3",
-        "checksum": "b884a366e1da7e826267e8f13a3c1a09",
-        "changelog": "new release",
-        "name": "КиноПоиск",
-        "targetAbi": "10.8.8.0",
-        "sourceUrl": "https://raw.githubusercontent.com/skrashevich/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.8.9.3.zip",
-        "timestamp": "2023-06-14T22:56:46Z"
-      },
-      {
-        "version": "10.8.9.2",
-        "checksum": "8cbefa9f1aa03dc054d0d8a83f49eb6b",
-        "changelog": "new release",
-        "name": "КиноПоиск",
-        "targetAbi": "10.8.8.0",
-        "sourceUrl": "https://raw.githubusercontent.com/skrashevich/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.8.9.2.zip",
-        "timestamp": "2023-02-08T16:42:11Z"
-      },
-      {
-        "version": "10.8.9.1",
-        "checksum": "d15934ff981be4d7df861cd35a862971",
-        "changelog": "new release",
-        "name": "КиноПоиск",
-        "targetAbi": "10.8.8.0",
-        "sourceUrl": "https://raw.githubusercontent.com/skrashevich/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.8.9.1.zip",
-        "timestamp": "2023-02-08T16:10:12Z"
-      },
-      {
-        "version": "10.8.9.1",
-        "checksum": "3790c3375057977320a77fe004f7c17f",
-        "changelog": "new release",
-        "targetAbi": "10.8.0",
-        "sourceUrl": "https://raw.githubusercontent.com/skrashevich/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.8.9.1.zip",
-        "timestamp": "2023-02-08T15:37:42Z"
-      },
-      {
-        "version": "10.7.5.6",
-        "changelog": "Update to .NET 7\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/skrashevich/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.5.6.zip",
-        "checksum": "60310678f450ca7f0da3811642ae2bc4",
-        "timestamp": "2023-01-22T03:34:00Z"
-      },
-      {
-        "version": "10.7.5.4",
-        "changelog": "Search fixed in case of null premiere date\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.5.4.zip",
-        "checksum": "2f48bd383e298da975e93a7f84fe3bc1",
-        "timestamp": "2021-10-17T15:57:00Z"
-      },
-      {
-        "version": "10.7.5.3",
-        "changelog": "Results parsing fixes due to upstream service changes (api 2.2)\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.5.3.zip",
-        "checksum": "43930ff3db6b6938dcbc23297c53c746",
-        "timestamp": "2021-09-27T12:09:43Z"
-      },
-      {
-        "version": "10.7.5.2",
-        "changelog": "Results parsing fixes due to upstream service changes\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.5.2.zip",
-        "checksum": "e35c1942fb8ceda1d351d7307174fab2",
-        "timestamp": "2021-08-10T16:00:08Z"
-      },
-      {
-        "version": "10.7.5.1",
-        "changelog": "Results parsing fixes\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.5.1.zip",
-        "checksum": "c41d06954e6c00d8b51f11ac11180cb3",
-        "timestamp": "2021-06-22T09:27:10Z"
-      },
-      {
-        "version": "10.7.5.0",
-        "changelog": "Short: Huge improvement in auto-identifying of movies. Rus: Значительно улучшено авто-привязка фильмов при добавлении в медиатеку. Пытаюсь найти идентификатор кинопоиска по паттерну kp-12345 или kp12345 в имени файла/папки. Пытаюсь найти единственное совпадение на кинопоиске по имени + году. Пытаюсь перебрать все совпадения по имени + сравнение IMDB ID.\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.5.0.zip",
-        "checksum": "ea7eabac0fc4d1891529616a16a02897",
-        "timestamp": "2021-05-23T15:30:18Z"
-      },
-      {
-        "version": "10.7.0.5",
-        "changelog": "Added trailers filtering: jellyfin-web can only play youtube trailers, not kinopoisk-hosted\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.0.5.zip",
-        "checksum": "6bdb97ee1e862b0b5657f7b510040148",
-        "timestamp": "2021-05-22T23:01:09Z"
-      },
-      {
-        "version": "10.7.0.4",
-        "changelog": "Added person info, person image, trailers fetching\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.0.4.zip",
-        "checksum": "81248e4da3c45744c460d37be12ff1bb",
-        "timestamp": "2021-05-16T20:38:12Z"
-      },
-      {
-        "version": "10.7.0.3",
-        "changelog": "Fixed bug with parsing Kinopoisk's xml response\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.0.3.zip",
-        "checksum": "fef78cce8e1c5a367fd9f76589d36b85",
-        "timestamp": "2021-05-01T15:20:01Z"
-      },
-      {
-        "version": "10.7.0.2",
-        "changelog": "Fixed empty episodes parsing\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.0.2.zip",
-        "checksum": "771563e5bb2f13b09c3d5833716f5281",
-        "timestamp": "2021-04-29T21:18:05Z"
-      },
-      {
-        "version": "10.7.0.1",
-        "changelog": "Fixed date parsing\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.0.1.zip",
-        "checksum": "6b99c44ff29ff35662164a01a4744b1b",
-        "timestamp": "2021-04-17T18:21:00Z"
-      },
-      {
-        "version": "10.7.0.0",
-        "changelog": "Initial release\n",
-        "targetAbi": "10.7.0",
-        "sourceUrl": "https://raw.githubusercontent.com/LinFor/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.7.0.0.zip",
-        "checksum": "ab1180fef631cfcb378b74b89937ee5d",
-        "timestamp": "2021-04-17T09:09:00Z"
       }
     ]
   }
