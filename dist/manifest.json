@@ -1,7 +1,7 @@
 [
   {
     "category": "Metadata",
-    "guid": "0c136f8a-ff77-4f2b-ade5-13462cae6216",
+    "guid": "680F7939-8E18-4DA9-9961-0A59B3CA27E0",
     "name": "КиноПоиск",
     "overview": "Информация о фильмах и сериалах с КиноПоиска",
     "owner": "LinFor & skrashevich",
@@ -10,8 +10,8 @@
     "versions": [
        {
         "version": "iv_10.9.0.2",
-        "checksum": "4c0a0922dab5930781164d665a4b39da",
-        "changelog": "new release",
+        "checksum": "a390dfa08e80061df9899cf5645b7905",
+        "changelog": "new release iv",
         "name": "КиноПоиск",
         "targetAbi": "10.9.0",
         "sourceUrl": "https://raw.githubusercontent.com/ivspbitec/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_iv_10.9.0.2.zip",
