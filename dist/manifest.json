@@ -13,9 +13,9 @@
         "checksum": "a390dfa08e80061df9899cf5645b7905",
         "changelog": "new release iv",
         "name": "КиноПоиск",
-        "targetAbi": "10.9.0",
+        "targetAbi": "10.10.3",
         "sourceUrl": "https://raw.githubusercontent.com/ivspbitec/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_iv_10.9.0.2.zip",
-        "timestamp": "2024-05-17T16:02:16Z"
+        "timestamp": "2024-11-27T16:02:16Z"
       }
     ]
   }
