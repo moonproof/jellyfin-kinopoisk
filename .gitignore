@@ -2,3 +2,5 @@ src/*/bin/*
 src/*/obj/*
 .devcontainer
 .DS_Store
+.idea
+.gigaide

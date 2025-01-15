@@ -1,5 +1,5 @@
 #!/bin/bash
-VERSION="10.9.0.1"
+VERSION="10.9.0.6"
 CHANGELOG="Fix bugs"
 
 check_command() {
@@ -46,10 +46,10 @@ cat << EOF > "dist/kinopoisk/kinopoisk_$VERSION/meta.json"
 }
 EOF
 echo $( cd $RELEASEDIR; zip -j "../kinopoisk_$VERSION.zip" *)
-rm -rf "$RELEASEDIR" 
+rm -rf "$RELEASEDIR"
 HASH=$(md5sum "$RELEASEDIR.zip" | cut -d' ' -f1)
 
-jq --arg HASH "$HASH" --arg URL "https://raw.githubusercontent.com/moonproof/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_$VERSION.zip" \
+jq --arg HASH "$HASH" --arg URL "https://raw.githubusercontent.com/moonproof/jellyfin-kinopoisk/refs/heads/main/dist/kinopoisk/kinopoisk_$VERSION.zip" \
     --arg TIMESTAMP "$(date -u "+%Y-%m-%dT%H:%M:%SZ")" \
     --arg VERSION "$VERSION" \
     '.[0].versions |= [{"version": $VERSION, "checksum": $HASH, "changelog": "new release", "name": "\u041a\u0438\u043d\u043e\u041f\u043e\u0438\u0441\u043a", "targetAbi": "10.9.0", "sourceUrl": $URL, "timestamp": $TIMESTAMP}] + .' \

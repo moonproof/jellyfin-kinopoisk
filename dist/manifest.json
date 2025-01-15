@@ -2,29 +2,20 @@
   {
     "category": "Metadata",
     "guid": "0c136f8a-ff77-4f2b-ade5-13462cae6216",
-    "name": "КиноПоиск_i", 
+    "name": "КиноПоиск_i",
     "overview": "i_Информация о фильмах и сериалах с КиноПоиска",
     "owner": "LinFor & skrashevich",
     "description": "[IV] Загружает рейтинг, описания, актёров, трейлеры и т.д. с сайта КиноПоиск. Может потребоваться зарегистрировать свой ApiToken, см. информацию в параметрах плагина. Для точного распознавания рекомендуется указывать id фильма с сайта КиноПоиск в имени файла в формате kp-12345 или kp12345. Подробнее см. https://github.com/LinFor/jellyfin-plugin-kinopoisk/blob/master/README.md\n",
     "imageUrl": "https://kinopoisk.userecho.com/s/attachments/28876/0/1/25f8c0315e6ccb2aa6c2642e48f2c9e9.png",
     "versions": [
       {
-        "version": "10.9.0.5",
-        "checksum": "c19381054590c04f9a2c36bb9a1cc82f",
+        "version": "10.9.1",
+        "checksum": "74d183223623642a99488088367c91f3",
         "changelog": "new release",
         "name": "КиноПоиск",
         "targetAbi": "10.9.0",
-        "sourceUrl": "https://raw.githubusercontent.com/moonproof/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_10.9.0.5.zip",
-        "timestamp": "2025-01-15T14:30:19Z"
-      },
-      {
-        "version": "10.9.0.4",
-        "checksum": "4212e9d59fe290551c10221ee0287b61",
-        "changelog": "new release iv",
-        "name": "КиноПоиск",
-        "targetAbi": "10.10.3",
-        "sourceUrl": "https://raw.githubusercontent.com/ivspbitec/jellyfin-plugin-kinopoisk/master/dist/kinopoisk/kinopoisk_iv_10.9.0.4.zip",
-        "timestamp": "2024-11-27T16:02:16Z"
+        "sourceUrl": "https://raw.githubusercontent.com/moonproof/jellyfin-kinopoisk/refs/heads/main/dist/kinopoisk/kinopoisk_10.9.0.6.zip",
+        "timestamp": "2025-01-15T14:51:17Z"
       }
     ]
   }
