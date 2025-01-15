@@ -1,6 +1,6 @@
 #!/bin/bash
-VERSION="10.9.0.5"
-CHANGELOG="Fixed models"
+VERSION="10.9.0.1"
+CHANGELOG="Fix bugs"
 
 check_command() {
     if ! command -v $1 &> /dev/null
@@ -11,14 +11,14 @@ check_command() {
 }
 
 # Check for required commands
-check_command sed
+check_command gsed
 
-#brew link --overwrite dotnet@8
+brew link --overwrite dotnet@8
 export PATH="/usr/local/opt/dotnet@8/bin:$PATH"
 
 find . -name project.assets.json -delete
 
-sed -i'' "s/version: .*/version: \"$VERSION\"/" src/Jellyfin.Plugin.Kinopoisk/build.yaml
+gsed -i'' "s/version: .*/version: \"$VERSION\"/" src/Jellyfin.Plugin.Kinopoisk/build.yaml
 BUILDYAML=`head -$(grep -n "changelog: >" src/Jellyfin.Plugin.Kinopoisk/build.yaml | head -1 | cut -d: -f1) src/Jellyfin.Plugin.Kinopoisk/build.yaml`
 echo -e "$BUILDYAML\n  $CHANGELOG" > src/Jellyfin.Plugin.Kinopoisk/build.yaml
 
@@ -45,7 +45,7 @@ cat << EOF > "dist/kinopoisk/kinopoisk_$VERSION/meta.json"
     "version": "$VERSION"
 }
 EOF
-echo $( cd $RELEASEDIR; Tar -a -cf "../kinopoisk_$VERSION.zip" *)
+echo $( cd $RELEASEDIR; zip -j "../kinopoisk_$VERSION.zip" *)
 rm -rf "$RELEASEDIR" 
 HASH=$(md5sum "$RELEASEDIR.zip" | cut -d' ' -f1)
 
