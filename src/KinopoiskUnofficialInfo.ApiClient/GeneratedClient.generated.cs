@@ -3830,6 +3830,9 @@ namespace KinopoiskUnofficialInfo.ApiClient
     
         [System.Runtime.Serialization.EnumMember(Value = @"FEMALE")]
         FEMALE = 1,
+
+        [System.Runtime.Serialization.EnumMember(Value = @"UNKNOWN")]
+        UNKNOWN = 2
     
     }
     
